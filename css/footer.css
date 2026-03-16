@@ -29,7 +29,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 0.8rem 0;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
 }
 
 .nav img {
@@ -41,14 +41,16 @@ nav {
   opacity: 0.5;
 }
 
+.nav__link:hover img {
+  transform: translateY(-2px);
+}
+
 .nav img {
   transition: transform 0.15s ease;
 }
 
-/* Footer: active */
-
 .nav__link--active {
-  /* border-bottom: 2px solid var(--hogwarts-gold); */
+  border-bottom: 2px solid var(--hogwarts-gold);
   background-color: rgba(255, 255, 255, 0.12);
   opacity: 1;
 }
