@@ -86,6 +86,11 @@ section {
   display: block;
 }
 
+.bookmark-page .card:has(.bookmark-toggle:not(:checked)) {
+  opacity: 0.5;
+  transition: all 0.75s ease;
+}
+
 /* Antwort-Button */
 
 .card__button {
@@ -135,4 +140,88 @@ section {
 
 .card:has(.answer-toggle:checked) .hide-text {
   display: inline;
+}
+
+/* Profil Page */
+.profile-card {
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin: 10%;
+}
+
+.profile__icon {
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+}
+
+.about__me {
+  text-align: left;
+}
+
+.profile__tags {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  list-style: none;
+  padding: 5% 5% 0;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tag__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.settings {
+  text-align: left;
+}
+
+.settings__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch {
+  appearance: none;
+  width: 44px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s ease;
+}
+
+.switch:checked {
+  background: var(--hogwarts-gold);
+}
+
+.switch:checked::before {
+  transform: translateX(20px);
 }
