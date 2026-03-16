@@ -1,0 +1,79 @@
+:root {
+  --hogwarts-gold: #edb528;
+  --dark-background: #1a1a2e;
+  --card-background: rgb(251, 249, 244);
+  --text-color: #513e2c;
+  --border-color: #826b55;
+}
+
+section {
+  margin: 10%;
+}
+
+.card {
+  position: relative;
+  background-color: rgb(251, 249, 244);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 7% 10%;
+  box-shadow: 0 4px 10px rgb(216, 215, 211);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.card__tags {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  gap: 1rem;
+  padding: 10px 5% 0;
+}
+
+.tag {
+  text-align: center;
+  padding: 1.5% 5%;
+  border: solid 1px var(--border-color);
+  border-radius: 5px;
+  background-color: rgb(233, 230, 227);
+  color: var(--text-color);
+}
+
+.bookmark img {
+  height: 40px;
+  display: block;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.25));
+  transition: all 0.15s ease;
+}
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  background: rgb(251, 249, 244);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.bookmark:hover img {
+  transform: translateY(-2px);
+  content: url(../assets/bookmark-dark.png);
+}
+
+.card__button {
+  background-color: rgb(251, 249, 244);
+  color: rgb(251, 249, 244);
+  border: 2px solid var(--border-color);
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: var(--text-color);
+}
+
+.card__button:hover {
+  background-color: #3a241f;
+  color: var(--hogwarts-gold);
+  transform: translateY(-2px);
+}

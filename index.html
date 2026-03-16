@@ -1,14 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <link rel="stylesheet" href="css/styles.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz-App</title>
+    <title>Harry Potter Quiz-App</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Quiz-App</h1>
+    <header class="app-header">
+      <h1>O.W. L. Challenge</h1>
+      <img src="assets/owl.png" alt="owl icon" />
     </header>
+    <main>
+      <section class="card">
+        <button class="bookmark">
+          <img src="assets/bookmark-light.png" alt="bookmark light" />
+        </button>
+        <h2 class="card__question">Question?</h2>
+        <p class="card__answer">Answer.</p>
+        <button class="card__button">Show Answer</button>
+        <ul class="card__tags">
+          <li class="tag">tag 1</li>
+          <li class="tag">tag 2</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
