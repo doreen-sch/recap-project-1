@@ -1,10 +1,11 @@
 :root {
   --hogwarts-gold: #edb528;
-  --dark-background: #1a1a2e;
+  --dark-background: #3c2e23;
   --card-background: rgb(251, 249, 244);
   --text-color: #513e2c;
   --border-color: #826b55;
-  --card-button: #3a241f;
+  --card-button: #3c2e23;
+  --bookmark-filled: rgb(163, 34, 34);
 }
 
 section {
@@ -54,41 +55,35 @@ section {
   height: 40px;
 }
 
-.bookmark img {
+.bookmark svg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  height: 40px;
-  display: block;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.25));
-  transition: all 0.15s ease;
 }
 
 .bookmark-toggle {
   display: none;
 }
 
-.bookmark-light {
-  opacity: 1;
-}
-
-.bookmark-dark {
-  opacity: 0;
-}
-
-.bookmark:hover img {
+.bookmark:hover svg {
   transform: translateY(-2px);
-  /* content: url(../assets/bookmark-dark.png); */
 }
 
-.card:has(.bookmark-toggle:checked) .bookmark-light {
-  opacity: 0;
+.bookmark-outline {
+  display: block;
+  fill: var(--text-color);
 }
 
-.card:has(.bookmark-toggle:checked) .bookmark-dark {
-  opacity: 1;
+.bookmark-filled {
+  display: none;
+  fill: var(--bookmark-filled);
+}
+
+.card:has(.bookmark-toggle:checked) .bookmark-outline {
+  display: none;
+}
+
+.card:has(.bookmark-toggle:checked) .bookmark-filled {
+  display: block;
 }
 
 /* Antwort-Button */

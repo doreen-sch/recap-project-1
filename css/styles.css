@@ -6,13 +6,17 @@
 
 :root {
   --hogwarts-gold: #edb528;
-  --dark-background: #1a1a2e;
+  --dark-background: #3c2e23;
   --light-background: white;
   --card-background: rgb(251, 249, 244);
 }
 
 body {
   margin: 0;
-  background-color: var(--light-background);
+  background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main {
+  padding-bottom: 4rem;
 }
