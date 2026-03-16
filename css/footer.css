@@ -1,0 +1,54 @@
+:root {
+  --hogwarts-gold: #edb528;
+  --dark-background: #3c2e23;
+  --card-background: rgb(251, 249, 244);
+  --text-color: #513e2c;
+  --border-color: #826b55;
+  --card-button: #3c2e23;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--dark-background);
+  border-top: 2px solid var(--hogwarts-gold);
+  padding: 1fr 0;
+  z-index: 10;
+}
+
+.nav__link {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-radius: 8px;
+}
+
+.nav img {
+  height: 40px;
+  filter: invert(1);
+}
+
+.nav img:hover {
+  opacity: 0.5;
+}
+
+.nav img {
+  transition: transform 0.15s ease;
+}
+
+/* Footer: active */
+
+.nav__link--active {
+  /* border-bottom: 2px solid var(--hogwarts-gold); */
+  background-color: rgba(255, 255, 255, 0.12);
+  opacity: 1;
+}
