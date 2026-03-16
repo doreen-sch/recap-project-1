@@ -1,0 +1,29 @@
+:root {
+  --hogwarts-gold: #edb528;
+  --dark-background: #1a1a2e;
+  --card-background: rgb(251, 249, 244);
+  --text-color: ;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: var(--dark-background);
+  color: var(--hogwarts-gold);
+  border-bottom: 3px solid var(--hogwarts-gold);
+  padding: 10px;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.app-header img {
+  height: 60px;
+}

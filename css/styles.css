@@ -1,0 +1,18 @@
+@import url(header.css);
+@import url(cards.css);
+@import url(footer.css);
+
+/* allgemeine Styles */
+
+:root {
+  --hogwarts-gold: #edb528;
+  --dark-background: #1a1a2e;
+  --light-background: white;
+  --card-background: rgb(251, 249, 244);
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-background);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
