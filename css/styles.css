@@ -7,8 +7,11 @@
 :root {
   --hogwarts-gold: #edb528;
   --dark-background: #3c2e23;
-  --light-background: white;
   --card-background: rgb(251, 249, 244);
+  --text-color: #513e2c;
+  --border-color: #826b55;
+  --card-button: #3c2e23;
+  --bookmark-filled: rgb(163, 34, 34);
 }
 
 body {
