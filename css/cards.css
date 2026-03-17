@@ -24,23 +24,6 @@ section {
   color: var(--text-color);
 }
 
-.card__tags {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-  gap: 1rem;
-  padding: 10px 5% 0;
-}
-
-.tag {
-  text-align: center;
-  padding: 1.5% 5%;
-  border: solid 1px var(--border-color);
-  border-radius: 5px;
-  background-color: rgb(233, 230, 227);
-  color: var(--text-color);
-}
-
 /* Bookmark */
 
 .bookmark {
@@ -140,6 +123,25 @@ section {
 
 .card:has(.answer-toggle:checked) .hide-text {
   display: inline;
+}
+
+/* Tags */
+
+.card__tags {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  gap: 1rem;
+  padding: 10px 5% 0;
+}
+
+.tag {
+  text-align: center;
+  padding: 1.5% 5%;
+  border: solid 1px var(--border-color);
+  border-radius: 5px;
+  background-color: rgb(233, 230, 227);
+  color: var(--text-color);
 }
 
 /* Profil Page */

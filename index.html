@@ -9,12 +9,12 @@
   <body>
     <header class="app-header">
       <h1>O.W. L. Exam</h1>
-      <a href="index.html">
-        <img src="assets/owl.png" alt="owl icon" />
+      <a href="index.html" aria-label="go to home page">
+        <img src="assets/owl.png" alt="reading owl icon" />
       </a>
     </header>
     <main>
-      <section class="card">
+      <section class="card" tabindex="0" aria-label="Question">
         <input type="checkbox" id="bookmark1" class="bookmark-toggle" />
         <label for="bookmark1" class="bookmark" aria-label="bookmark">
           <svg class="bookmark-outline" viewBox="0 0 24 24" aria-hidden="true">
@@ -159,7 +159,7 @@
         </ul>
       </section>
     </main>
-    <footer class="app-footer">
+    <footer class="app-footer" aria-label="main navigation">
       <nav class="nav">
         <a href="index.html" class="nav__link nav__link--active">
           <img src="/assets/home-light.png" alt="home" />
