@@ -39,13 +39,16 @@ section {
 }
 
 .bookmark svg {
-  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.25));
 }
 
-.bookmark-toggle {
+/* .bookmark-toggle {
   display: none;
-}
+} */
 
 .bookmark:hover svg {
   transform: translateY(-2px);
@@ -61,18 +64,18 @@ section {
   fill: var(--bookmark-filled);
 }
 
-.card:has(.bookmark-toggle:checked) .bookmark-outline {
+.bookmark.is-active .bookmark-outline {
   display: none;
 }
 
-.card:has(.bookmark-toggle:checked) .bookmark-filled {
+.bookmark.is-active .bookmark-filled {
   display: block;
 }
 
-.bookmark-page .card:has(.bookmark-toggle:not(:checked)) {
+/* .bookmark-page .card:has(.bookmark-toggle:not(:checked)) {
   opacity: 0.5;
   transition: all 0.75s ease;
-}
+} */
 
 /* Antwort-Button */
 
@@ -108,20 +111,77 @@ section {
 
 /* Button/Checkbox: aktiv */
 
-.card:has(.answer-toggle:checked) .card__button {
+/* .card:has(.answer-toggle:checked) .card__button {
   background-color: var(--card-button);
   color: var(--hogwarts-gold);
-}
+} */
 
-.card:has(.answer-toggle:checked) .card__answer {
+/* .card:has(.answer-toggle:checked) .card__answer {
+  display: block;
+} */
+
+.card.answer-visible .card__answer {
   display: block;
 }
 
-.card:has(.answer-toggle:checked) .show-text {
+/* .card:has(.answer-toggle:checked) .show-text {
+  display: none;
+} */
+
+.card.answer-visible .card__answer {
+  display: block;
+}
+
+/* .card:has(.answer-toggle:checked) .hide-text {
+  display: inline;
+} */
+
+/* Button/Checkbox: inaktiv */
+
+.card__button:hover {
+  transform: translateY(-2px);
+}
+
+.hide-text {
   display: none;
 }
 
-.card:has(.answer-toggle:checked) .hide-text {
+.card__answer {
+  display: none;
+}
+
+/* .answer-toggle {
+  display: none;
+} */
+
+/* Button/Checkbox: aktiv */
+
+/* .card:has(.answer-toggle:checked) .card__button {
+  background-color: var(--card-button);
+  color: var(--hogwarts-gold);
+} */
+
+/* .card:has(.answer-toggle:checked) .card__answer {
+  display: block;
+} */
+
+.card.answer-visible .card__answer {
+  display: block;
+}
+
+/* .card:has(.answer-toggle:checked) .show-text {
+  display: none;
+} */
+
+.card.answer-visible .show-text {
+  display: none;
+}
+
+/* .card:has(.answer-toggle:checked) .hide-text {
+  display: inline;
+} */
+
+.card.answer-visible .hide-text {
   display: inline;
 }
 
