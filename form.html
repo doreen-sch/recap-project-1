@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter Quiz-App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>O.W. L. Exam</h1>
+      <a href="index.html" aria-label="go to home page">
+        <img src="assets/owl.png" alt="reading owl icon" />
+      </a>
+    </header>
+    <main>
+      <section class="card">
+        <h2 id="new-card">Create your own Quizcard</h2>
+        <form class="form" aria-labelledby="new-card" data-js="card-form">
+          <div class="form__row">
+            <label for="new-question">Question:</label>
+            <div class="form__field">
+              <textarea
+                id="new-question"
+                placeholder="add question here"
+                minlength="1"
+                maxlength="50"
+                required
+                data-js="question-input"
+              ></textarea>
+              <p class="counter" data-js="question-counter">
+                50 characters left
+              </p>
+            </div>
+          </div>
+          <div class="form__row">
+            <label for="new-answer">Answer:</label>
+            <div class="form__field">
+              <textarea
+                id="new-answer"
+                placeholder="add answer here"
+                minlength="1"
+                maxlength="150"
+                required
+                data-js="answer-input"
+              ></textarea>
+              <p class="counter" data-js="answer-counter">
+                300 characters left
+              </p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <label for="new-tag">Tag:</label>
+            <div class="form__field">
+              <input
+                type="text"
+                id="new-tag"
+                placeholder="add a tag here"
+                minlength="1"
+                maxlength="20"
+                required
+                data-js="tag-input"
+              />
+              <p class="counter" data-js="tag-counter">20 characters left</p>
+            </div>
+          </div>
+          <div class="form__buttons">
+            <button type="reset" aria-label="reset all fields">
+              Reset all fields
+            </button>
+            <button type="submit" aria-label="add quizcard">
+              Add new Quizzcard
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <nav class="nav" aria-label="main navigation">
+        <a href="index.html" class="nav__link">
+          <img src="/assets/home-light.png" alt="home" />
+        </a>
+        <a href="bookmarks.html" class="nav__link">
+          <img src="/assets/bookmark-light.png" alt="bookmarks" />
+        </a>
+        <a href="form.html" class="nav__link nav__link--active">
+          <img src="/assets/square-pen.svg" alt="add bookmark page" />
+        </a>
+        <a href="profile.html" class="nav__link">
+          <img src="/assets/user-light.png" alt="profile" />
+        </a>
+      </nav>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
